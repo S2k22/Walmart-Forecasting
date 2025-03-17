@@ -41,6 +41,6 @@ For a machine learning approach, I employed a Gradient Boosting Regressor. This 
 After performing several test and tuning parameters of both of the models I can draw a summary. In the case of this exact dataset simpler model (Exponential Smoothing) performed much better than a more complex (Gradient Boosting) model. The Exponential Smoothing achieved around 6% of error while the Gradient Boosting showed 16%. This can be explained by a few things.
 - Exponential smoothing methods are specifically built to capture level, trend, and seasonality. They update forecasts based on past observations with exponentially decreasing weights. During the exploratory analysis I spotted a clear trend in winter month
 - Gradient Boosting has a higher complexity, a lot of hyperparameters and is much more sensitive to tuning.
-- Gradient Boosting requires extensive feature engineering, the set of features provided by the dataset might not fit the model well enough, the movement in sales just might not be explained well enough by available features. Smoothing on another hand does not require any features to forecast the prediction and might catch this exact dataset better.
+- Gradient Boosting requires extensive feature engineering, the set of features provided by the dataset might not fit the model well enough, the movement in sales just might not be explained well enough by available features. Smoothing on another hand does not require any features to forecast the prediction and might catch the trends in this exact dataset better.
 
 
